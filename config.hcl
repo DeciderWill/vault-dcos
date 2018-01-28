@@ -4,7 +4,7 @@ listener "tcp" {
   tls_key_file = "/tmp/server-key.pem"
 }
 
-api_addr = "http://vault.outflank.io"
+api_addr = "https://vault.outflank.io"
 cluster_addr = "https://vault.marathon.mesos:8200"
 
 backend "zookeeper" {
