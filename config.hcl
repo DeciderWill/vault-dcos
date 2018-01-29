@@ -5,12 +5,12 @@ listener "tcp" {
 }
 
 api_addr = "https://vault.outflank.io"
-cluster_addr = "https://vault.marathon.mesos:8200"
+cluster_addr = "https://vault.outflank.io:443"
 
 backend "zookeeper" {
   address = "aic.outflank.io:2181"
   path = "vault"
-  advertise_addr = "https://vault.marathon.mesos:8200"
+  advertise_addr = "https://vault.outflank.io:443"
 }
 
 cluster_name = "outflank"
